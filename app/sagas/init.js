@@ -12,7 +12,7 @@ function *watchReduxLoadFromDisk() {
 
       //
       if (isAuthenticated) {
-       yield call(Actions.main);
+       	yield call(() => {});
       }
     } catch (err) {
       console.log("saga watchReduxLoadFromDisk error: ", err);
