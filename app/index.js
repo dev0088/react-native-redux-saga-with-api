@@ -1,3 +1,4 @@
+import Expo from 'expo';
 import React, {Component} from 'react';
 import {Navigator} from 'react-native';
 import { Provider } from 'react-redux';
@@ -25,3 +26,5 @@ export default class App extends Component {
     );
   }
 }
+
+Expo.registerRootComponent(App);
